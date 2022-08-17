@@ -237,10 +237,12 @@ jobs:
           name: Install dependencies
           command: |
             # your code here
+            exit 1
       - run:
           name: Update cloudfront distribution
           command: |
             # your code here
+            exit 1
       # Here's where you will add some code to rollback on failure  
 
 cleanup:
