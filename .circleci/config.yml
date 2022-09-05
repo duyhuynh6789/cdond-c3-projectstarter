@@ -256,9 +256,9 @@ jobs:
             if grep -q "has been executed successfully" migration_output
             then
               echo "insecure" >> ~/.curlrc
-              curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1'
+              curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1' -k
             else
-              curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '0'             
+              curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '0' -k            
             fi
       - destroy-environment
 
