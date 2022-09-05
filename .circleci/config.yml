@@ -60,8 +60,8 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - slack/notify:
-        event: fail
-        template: basic_fail_1
+          event: fail
+          template: basic_fail_1
   notify-success:
     docker:
       - image: "cimg/base:stable"
@@ -368,5 +368,5 @@ workflows:
       #     requires: [cloudfront-update]
   status:
     jobs:
-    - notify-fails
-    - notify-success
+      - notify-fails
+      - notify-success
