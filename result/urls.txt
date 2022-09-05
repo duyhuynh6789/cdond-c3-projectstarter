@@ -1,5 +1,7 @@
 1. Public Url to GitHub repository (not private) [URL01]:
 https://github.com/duyhuynh6789/cdond-c3-projectstarter.git
 2. 
+3. URL03: d2wmitf1bt7mei.cloudfront.net
+4. URL04: 54.221.10.41:3030/api/status
 #############
-S3 URL: udapeople-k2oi40j1
+#S3 URL: udapeople-k2oi40j1
