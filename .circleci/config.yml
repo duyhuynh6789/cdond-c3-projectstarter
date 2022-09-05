@@ -34,6 +34,27 @@ commands:
             fi
             
 jobs:
+  notify:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - slack/notify:
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "plain_text",
+                      "text": "*This is a text notification*",
+                      "emoji": true
+                    }
+                  ]
+                }
+              ]
+            }
+          event: always
   build-frontend:
     docker:
       - image: circleci/node:13.8.0
@@ -297,6 +318,9 @@ jobs:
             
 
 workflows:
+  send-notification:
+    jobs:
+      - notify
   default:
     jobs:
       - build-frontend
