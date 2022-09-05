@@ -255,6 +255,7 @@ jobs:
             cd ~/project/backend
             if grep -q "has been executed successfully" migration_output
             then
+              echo "insecure" >> ~/.curlrc
               curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1'
             else
               curl https://kvdb.io/KWmftMr7VSgZreE7NA9w5h/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '0'             
