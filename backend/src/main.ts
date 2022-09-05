@@ -26,7 +26,7 @@ async function bootstrap() {
     .setTitle('Glee2')
     .setDescription('Glee2 API')
     .setVersion('1.0')
-    .addTag('customTag'a)
+    .addTag('customTag')
     .setBasePath(apiVersionPrefix)
     .addBearerAuth() // here is an intentional compile error. Remove the "x" and the backend should compile.
     .build();
