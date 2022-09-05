@@ -342,7 +342,7 @@ jobs:
               --query 'Reservations[*].Instances[*].PublicIpAddress' \
               --output text)
             echo ${BACKEND_IP}
-            if curl "${API_URL}/api/status" | grep "ok"
+            if curl "http://${BACKEND_IP}/api/status" | grep "ok"
             then
                 return 0
             else
