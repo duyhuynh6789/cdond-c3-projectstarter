@@ -3,5 +3,5 @@ https://github.com/duyhuynh6789/cdond-c3-projectstarter.git
 2. URL02: http://udapeople-30d2769.s3-website-us-east-1.amazonaws.com/
 3. URL03: https://d2wmitf1bt7mei.cloudfront.net/
 4. URL04: http://18.212.5.130:3030/api/status
-5. URL05: http://54.211.223.223:9090/alerts
+5. URL05: http://44.204.238.206:9090/alerts
 #############
